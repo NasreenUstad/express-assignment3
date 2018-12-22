@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Friend</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/friend.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="main-header__nav">
+            <ul class="main-header__item-list">
+                <li class="main-header__item"><a href="/">Diary</a></li>
+                <li class="main-header__item"><a class="active" href="/add-friend">Add Friend</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form class="friend-form" action="/add-friend" method="POST">
+            <div class="form-control">
+                <label for="friend_name">Name</label>
+                <input type="text" name="friend_name" id="friend_name">
+            </div>
+            <div class="form-control">
+                <label for="mobile">Mobile No</label>
+                <input type="tel" name="mobile" id="mobile">
+            </div>
+            <!-- <div class="form-control"> -->
+            <button type="submit">Add Friend</button>
+            <!-- </div> -->
+        </form>
+    </main>
+</body>
+
+</html>
